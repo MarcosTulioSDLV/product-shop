@@ -2,7 +2,7 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white)  ![Postgres](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) ![OpenApi](https://img.shields.io/badge/Docs-OpenAPI-success?style=for-the-badge&logo=swagger)
 ![SpringSecurity](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=Spring-Security&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-323330?style=for-the-badge&logo=json-web-tokens&logoColor=pink)
 
-I developed a Rest API to manage products, customers and their orders in a shop, built by using **Spring Boot, Java, and Postgres as the Database**, providing CRUD (Create, Read, Update, Delete) operations with authentication control enabled through **Spring Security and JWT tokens**. This API allows storing product information, such as: name, description, price, stock quantity, and the associated category, which contains its own name, description, and image. It also supports storing order information such as: payment method, purchase total price, address, phone number, and more. Finally, to ensure security, storing user information such as username and password is necessary for all user types, including admin, manager and user.
+I developed a Rest API to manage products, customers and their orders in a shop, built by using **Spring Boot, Java, and Postgres as the Database**, providing CRUD (Create, Read, Update, Delete) operations with authentication control enabled through **Spring Security and JWT tokens**. This API allows storing product information, such as: name, description, price, stock quantity, and the associated category, which contains its own name, description, and image. It also supports storing order information such as: payment method, purchase total price, address, phone number, and more. Finally, to ensure security, storing user information such as username and password is necessary for all user types, including admin, manager and customer.
 
 I used some libraries for this Rest API such **Spring Web, Spring Data JPA, Validation, ModelMapper, PostgreSQL Driver, SpringDoc OpenAPI Starter WebMVC UI (for the API documentation), Spring Security and java-jwt**.
 
@@ -12,13 +12,6 @@ Below are some business rules that are essential for the system's functionality:
 
 • The user email is unique in the system, therefore, only one registration with the same email is allowed. Additionally, the recipe description and serving are both optional fields.
 
-• A user can have multiple recipes, while each recipe belongs to only one user. A recipe can have multiple ingredients, while each ingredient belongs to only one recipe.
-
-• Allows the creation, updating, and removal of a user, recipe, or ingredient from the system.
-
-• Allows users to retrieve the list of recipes, with optional filtering by title or username. Note that filtering supports both exact matches (full string comparison) and partial matches (e.g., searching for substrings within the title or username).
-
-• The ingredient unit simply represents the unit of measurement, such as G (Gram), KG (Kilogram), ML (Milliliter), L (Liter), PC (Piece), TSP (Teaspoon), TBSP (Tablespoon), and PINCH (A dash). The ingredient type simply refers to the ingredient itself (e.g., egg, milk, salt, etc.).
 
 
 ## Authentication
