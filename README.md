@@ -16,13 +16,14 @@ Below are some business rules that are essential for the system's functionality:
 
 • An order can contain multiple products, and each product can be part of multiple orders.
 
-• Allows the creation, updating, and removal of users, products, and categories from the system, considering security roles and permissions.
+• Allows the creation, reading, updating, and removal (CRUD) of users, products, categories, and orders from the system, considering security roles and permissions.
 
 • Customer users (end users) can perform standard store operations such as browsing products, placing orders, and managing their own account.
 
 • Manager users are allowed to perform core store management tasks, such as managing products, inventory, and orders.
 
-• Admin users have full access, including the ability to manage users, roles, products, and overall system settings.
+• Admin users have full access, including the ability to manage users, roles, products, orders, and overall system settings.
+
 
 ## Authentication
 The API uses Spring Security for authentication control. The following roles are available:
