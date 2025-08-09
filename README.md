@@ -24,7 +24,7 @@ Below are some business rules that are essential for the system's functionality:
 The API uses Spring Security for authentication control. The following roles are available:
 
 ```
-USER -> Standard user role, limited to standard store operations (e.g., browsing products, placing orders, and managing their own account).
+CUSTOMER -> Standard user role, limited to standard store operations (e.g., browsing products, placing orders, and managing their own account).
 MANAGER -> Management role with permissions to perform core store management tasks (e.g., managing products, inventory, and orders). 
 ADMIN -> Administrative role with full access (e.g., manage users, roles, products, orders, and overall system settings).
 ```
