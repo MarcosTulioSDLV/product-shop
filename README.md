@@ -18,19 +18,15 @@ Below are some business rules that are essential for the system's functionality:
 
 • Allows the creation, reading, updating, and removal (CRUD) of users, products, categories, and orders from the system, considering security roles and permissions.
 
-• Customer users (end users) can perform standard store operations such as browsing products, placing orders, and managing their own account.
-
-• Manager users are allowed to perform core store management tasks, such as managing products, inventory, and orders.
-
-• Admin users have full access, including the ability to manage users, roles, products, orders, and overall system settings.
-
+• Permissions and allowed operations vary depending on the assigned role (see Roles and Permissions section).
 
 ## Authentication
 The API uses Spring Security for authentication control. The following roles are available:
 
 ```
-USER -> Standard user role, limited to default basic operations (e.g., managing their own data, such as user information, recipes, and ingredients).
-ADMIN -> Administrative role with permissions to create new users, manage all recipes and ingredients, and perform advanced actions.
+USER -> Standard user role, limited to standard store operations (e.g., browsing products, placing orders, and managing their own account).
+MANAGER -> Management role with permissions to perform core store management tasks (e.g., managing products, inventory, and orders). 
+ADMIN -> Administrative role with full access (e.g., manage users, roles, products, orders, and overall system settings).
 ```
 
 ## Database Initialization with Default Data
