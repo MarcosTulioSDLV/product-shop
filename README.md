@@ -18,7 +18,7 @@ Below are some business rules that are essential for the system's functionality:
 
 • Allows the creation, reading, updating, and removal (CRUD) of users, products, categories, and orders from the system, considering security roles and permissions.
 
-• Permissions and allowed operations vary depending on the assigned role (see Roles and Permissions section).
+• Permissions and allowed operations vary depending on the assigned role (see Authentication section).
 
 ## Authentication
 The API uses Spring Security for authentication control. The following roles are available:
