@@ -34,9 +34,9 @@ For this project, default users have been created using the data.sql file.
 
 The default users were created with the following credentials:
 
-- Username: pedro, Password: 123 (USER role).
-
-- Username: marcos, Password: 123 (both USER and ADMIN roles).
+- Username: lina, Password: 123 (USER role).
+- Username: pedro, Password: 123 (MANAGER role).
+- Username: marcos, Password: 123 (ADMIN role).
 
 ## Database Config
 For this API, the Postgres Database was used with the following configuration properties: 
