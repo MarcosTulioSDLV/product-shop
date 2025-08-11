@@ -11,7 +11,7 @@ import java.util.UUID;
 @Entity
 @Table(name = "TB_USER")
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString(exclude = "orders")
+@Getter @Setter @ToString()//@ToString(exclude = "orders")
 //@EqualsAndHashCode(exclude = "orders")
 public class UserEntity {
 
@@ -40,7 +40,6 @@ public class UserEntity {
             inverseJoinColumns = {@JoinColumn(name = "role_id")})
     List<Role> roles= new ArrayList<>();
 
-    //NEW (si es necesario?, dejar o borrar?)
     //Note: If you use this field, ignore it in the update methods.
     //@JsonIgnore
     //@OneToMany(mappedBy = "user",cascade = CascadeType.ALL/*, orphanRemoval = true*/)

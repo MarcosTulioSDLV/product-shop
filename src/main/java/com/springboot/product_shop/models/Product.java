@@ -12,8 +12,8 @@ import java.util.UUID;
 @Entity
 @Table(name = "TB_PRODUCT")
 @NoArgsConstructor @AllArgsConstructor
-@Getter @Setter @ToString(exclude = "orderProductList")
-//@EqualsAndHashCode(exclude = "product")
+@Getter @Setter @ToString()//@ToString(exclude = "orderProductList")
+//@EqualsAndHashCode(exclude = "orderProductList")
 public class Product {
 
     @Id
@@ -39,7 +39,6 @@ public class Product {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    //NEW (NECESARIO???DEJAR)
     //@JsonIgnore
     //@OneToMany(mappedBy = "product",cascade = CascadeType.ALL/*, orphanRemoval = true*/)
     //List<OrderProduct> orderProductList= new ArrayList<>();

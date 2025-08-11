@@ -52,7 +52,8 @@ public class ProductShopApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Role role1= new Role(null,RoleEnum.ADMIN);
+
+		/*Role role1= new Role(null,RoleEnum.ADMIN);
 		Role role2= new Role(null,RoleEnum.MANAGER);
 		Role role3= new Role(null,RoleEnum.CUSTOMER);
 		roleRepository.saveAll(List.of(role1,role2,role3));
@@ -60,9 +61,9 @@ public class ProductShopApplication implements CommandLineRunner {
 		String user1Password="123";
 		String user1encodedPassword= passwordEncoder.encode(user1Password);
 		System.out.println("Password: " +user1Password+ " Encoded Password: "+user1encodedPassword);
-		UserEntity user1= new UserEntity(null,"111","marcos",user1encodedPassword,"marcos soto","ADMIN_m@gmail.com",List.of(role1)/*,new ArrayList<>()*/);
-		UserEntity user2= new UserEntity(null,"222","pedro",user1encodedPassword,"pedro diaz","MANAGER_p@gmail.com",List.of(role2)/*,new ArrayList<>()*/);
-		UserEntity user3= new UserEntity(null,"333","lina",user1encodedPassword,"lina diaz","CUSTOMER_l@gmail.com",List.of(role3)/*,new ArrayList<>()*/);
+		UserEntity user1= new UserEntity(null,"111","marcos",user1encodedPassword,"marcos soto","ADMIN_m@gmail.com",List.of(role1));
+		UserEntity user2= new UserEntity(null,"222","pedro",user1encodedPassword,"pedro diaz","MANAGER_p@gmail.com",List.of(role2));
+		UserEntity user3= new UserEntity(null,"333","lina",user1encodedPassword,"lina diaz","CUSTOMER_l@gmail.com",List.of(role3));
 
 		userRepository.saveAll(Arrays.asList(user1,user2,user3));
 
@@ -78,7 +79,7 @@ public class ProductShopApplication implements CommandLineRunner {
 		Product product3= new Product(null,"ball","description 1...","img_url", BigDecimal.valueOf(10),2,category2);
 
 		productRepository.saveAll(Arrays.asList(product1,product2,product3));
-
+		*/
 	}
 
 }
