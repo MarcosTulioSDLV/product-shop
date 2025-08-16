@@ -66,7 +66,7 @@ This Rest API was built with:
 
 ## System Class Diagram
 
-![SystemClassDiagram](https://github.com/user-attachments/assets/981d652c-583b-49a2-9253-e7ddabe82490)
+![SystemClassDiagram](https://github.com/user-attachments/assets/3c6a55f3-51cf-4b72-ad72-5ba3344df355)
 
 
 

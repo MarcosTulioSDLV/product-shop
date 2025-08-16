@@ -2,7 +2,7 @@ package com.springboot.product_shop.enums;
 
 public enum OrderStatusEnum {
     PENDING,
-    //PAID,
+    PAID,
     SHIPPED,
     DELIVERED,
     CANCELED
