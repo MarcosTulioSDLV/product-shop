@@ -23,6 +23,6 @@ INSERT INTO TB_CATEGORY(id,name,description,image_url) VALUES
 ('88888888-8888-8888-8888-888888888888','Sports','description 1...','img_url');
 
 INSERT INTO TB_PRODUCT(id,name,description,image_url,price,stock_quantity,category_id) VALUES
-('99999999-9999-9999-9999-999999999999','tv z','description 1...','img_url',100.00,2,'77777777-7777-7777-7777-777777777777'),
-('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa','pc z','description 1...','img_url',50.00,2,'77777777-7777-7777-7777-777777777777'),
+('99999999-9999-9999-9999-999999999999','tv','description 1...','img_url',100.00,2,'77777777-7777-7777-7777-777777777777'),
+('aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa','pc','description 1...','img_url',50.00,2,'77777777-7777-7777-7777-777777777777'),
 ('bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb','ball','description 1...','img_url',10.00,2,'88888888-8888-8888-8888-888888888888');
