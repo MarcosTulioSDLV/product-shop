@@ -30,7 +30,7 @@ ADMIN -> Administrative role with full access (e.g., manage users, roles, produc
 ```
 
 ## Database Initialization with Default Data
-For this project, default users have been created using the data.sql file.
+For this project, default users, categories and products have been created using the data.sql file.
 
 The default users were created with the following credentials:
 
@@ -41,7 +41,7 @@ The default users were created with the following credentials:
 ## Database Config
 For this API, the Postgres Database was used with the following configuration properties: 
 
-- Database name: recipe_management_system_db
+- Database name: product_shop_db
 - Username: postgres
 - Password: 123456
 
@@ -61,7 +61,7 @@ spring.sql.init.mode=embedded
 ## Development Tools
 This Rest API was built with:
 
-- Spring Boot version: 3.4.2
+- Spring Boot version: 3.4.5
 - Java version: 17
 
 ## System Class Diagram
